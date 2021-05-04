@@ -1,6 +1,5 @@
 import * as React from "react";
 import TwitterIcon from "@material-ui/icons/Twitter";
-import clsx from "clsx";
 import { AppBarProps, WithStyles } from "@material-ui/core";
 import { withStyles, Theme } from "@material-ui/core/styles";
 import Link from "@material-ui/core/Link";
@@ -60,7 +59,7 @@ function AppAppBar(props: WithStyles<typeof styles> & AppBarProps) {
             {"NEPA JEEP CLUB"}
           </Link>
           <div className={classes.right}>
-            <a href="">
+            <a href="https://twitter.com/jeepnepa">
               <TwitterIcon className={classes.icon} />
             </a>
             {/* <Link

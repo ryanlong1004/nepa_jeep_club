@@ -4,8 +4,6 @@ import Grid from "@material-ui/core/Grid";
 import Link from "@material-ui/core/Link";
 import Container from "@material-ui/core/Container";
 import Typography from "../components/Typography";
-import TextField from "../components/TextField";
-import TwitterIcon from "@material-ui/icons/Twitter";
 
 function Copyright() {
   return (
@@ -68,17 +66,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     width: 150,
   },
 }));
-
-const LANGUAGES = [
-  {
-    code: "en-US",
-    name: "English",
-  },
-  {
-    code: "fr-FR",
-    name: "Français",
-  },
-];
 
 export default function AppFooter() {
   const classes = useStyles();
