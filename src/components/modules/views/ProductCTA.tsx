@@ -7,6 +7,7 @@ import Typography from "../components/Typography";
 import TextField from "../components/TextField";
 import Snackbar from "../components/Snackbar";
 import Button from "../components/Button";
+import { NetlifyForm, Honeypot } from "react-netlify-forms";
 import cta from "../../img/cta.png";
 
 const styles = (theme: Theme) =>
@@ -77,11 +78,14 @@ function ProductCTA(props: WithStyles<typeof styles>) {
       <Grid container>
         <Grid item xs={12} md={6} className={classes.cardWrapper}>
           <div className={classes.card}>
-            <form
+            <NetlifyForm
+              name="keep_updated_form"
+              honeypotName="bot-field"
               id="keep_updated_form"
               onSubmit={handleSubmit}
               className={classes.cardContent}
             >
+              <Honeypot />
               <Typography variant="h2" component="h2" gutterBottom>
                 Let's Drive
               </Typography>
@@ -102,7 +106,7 @@ function ProductCTA(props: WithStyles<typeof styles>) {
               >
                 Keep me updated
               </Button>
-            </form>
+            </NetlifyForm>
           </div>
         </Grid>
         <Grid item xs={12} md={6} className={classes.imagesWrapper}>
