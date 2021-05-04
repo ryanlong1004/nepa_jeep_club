@@ -80,6 +80,7 @@ function ProductCTA(props: WithStyles<typeof styles>) {
           <div className={classes.card}>
             <NetlifyForm
               name="keep_updated_form"
+              action="/thanks"
               honeypotName="bot-field"
               id="keep_updated_form"
               onSubmit={handleSubmit}
