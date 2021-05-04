@@ -65,7 +65,7 @@ function ProductCTA(props: WithStyles<typeof styles>) {
   const [open, setOpen] = React.useState(false);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+    // event.preventDefault();
     setOpen(true);
   };
 
@@ -81,6 +81,7 @@ function ProductCTA(props: WithStyles<typeof styles>) {
             <form
               name="keep_updated_form"
               id="keep_updated_form"
+              method="POST"
               data-netlify="true"
               onSubmit={handleSubmit}
               className={classes.cardContent}
