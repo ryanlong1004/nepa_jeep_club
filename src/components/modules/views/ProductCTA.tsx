@@ -83,7 +83,7 @@ function ProductCTA(props: WithStyles<typeof styles>) {
               className={classes.cardContent}
             >
               <Typography variant="h2" component="h2" gutterBottom>
-                Let's Ride
+                Let's Drive
               </Typography>
               <Typography variant="h5">
                 We'll update you via email with rides and events.
